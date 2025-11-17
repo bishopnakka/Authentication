@@ -9,6 +9,7 @@ require('dotenv').config();
 App.use(cors({ origin: "*" }));
 App.use(express.json());
 
+
 const db=mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
