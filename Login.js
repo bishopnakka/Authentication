@@ -10,6 +10,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     body: JSON.stringify({ username, passwords })
   });
 
+  
   const result = await response.json();
   console.log("Login user:", result);
 
