@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            height: 500px;
+            overflow: hidden;
+        }
+        button{
+            margin: 50px 400px;
+            height: 50px;
+            width: 100px;
+            font-size: 20px;
+            border: none;
+        }
+        h2{
+            font-size: 30px;
+        }
+        .h2-22{
+            color: white;
+            animation: none;
+        }
+        .h2-1{
+            animation: b 1s ease infinite;
+        }
+         .h2-2{
+            animation: c 1.2s linear infinite;
+        }
+         .h2-3{
+            animation: a 0.5s ease infinite;
+        }
+         .h2-4{
+            animation: b 1.5s ease infinite;
+        }
+         .h2-5{
+            animation: a 1s ease infinite;
+        }
+         .h2-6{
+            animation: c 1.3s ease infinite;
+        }
+         .h2-7{
+            animation: d 1s ease infinite;
+        }
+        @keyframes a {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }  
+            100%{
+                transform: translateX(-100px);
+            }  
+        }
+        @keyframes b {
+            0%{
+                transform: translateX(0px);
+            }
+            50%{
+                 transform: translateX(200px);
+            }
+            100%{
+                transform: translateX(-200px);
+            } 
+        }
+         @keyframes c {
+            0%{
+                transform: translateX(0px);
+
+            }
+            50%{
+                 transform: translateX(170px);
+
+            }
+            100%{
+                transform: translatex(500px);
+            }   
+        }
+         @keyframes d {
+            0%{
+                transform: translatey(-100px);
+
+            }
+            50%{
+                 transform: translatey(-200px);
+
+            }
+            100%{
+                transform: translatey(-500px);
+            }
+            
+        }
+    </style>
+
+    <script>
+         const token = localStorage.getItem("token");
+             if (!token) {
+             alert("You must login first");
+             window.location.href = "Login.html";
+            }
+</script>
+     <button id="btn">stop</button>
+    <div style="display: flex;justify-content: center;align-items: center;flex-direction: column;;">
+        <h2 class="h2-1" style="color: rgb(42, 165, 85);">W</h2>
+        <h2 class="h2-2" style="color: brown;;">E</h2>
+        <h2 class="h2-3" style="color: rgb(17, 50, 169);">L</h2>
+        <h2 class="h2-4" style="color: rgb(207, 213, 16);">C</h2>
+        <h2 class="h2-5" style="color: rgb(9, 126, 168);">O</h2>
+        <h2 class="h2-6" style="color: rgb(130, 5, 124);">M</h2>
+        <h2 class="h2-7" style="color: rgb(222, 132, 7);">E</h2>
+    </div>
+
+    <script src="./Todo.js"></script>
+</body>
+</html>

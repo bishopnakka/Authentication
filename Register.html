@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <style>
+        html{
+          background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(37, 37, 196, 1) 50%, rgba(72, 63, 171, 1) 72%);
+        }
+      body{
+        overflow: hidden;
+        height: 500px;
+      }
+        label{
+            color: white;
+        }
+        form{
+            width: 500px;
+            height: 400px;
+            margin: 50px 0px 0px 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: black;
+            animation: a 1s ease;
+            border-radius: 20px 200px 20px 20px;
+        }
+        a{
+          color:white;
+          margin-left: 50px;
+        }
+        input{
+            border-radius: 5px;
+            background-color: rgb(12, 10, 15);
+            color: white;
+            width: 200px;
+            height: 30px;
+            border: none;
+            box-shadow: 0px 0px 10px white;
+        }
+        button{
+            width: 50px;
+            background-color: rgb(8, 9, 8);
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0px 0px 10px green;
+            color: green;
+        }
+        span{
+          margin-left: 700px;
+          margin-bottom: 100px;
+        }
+        @keyframes a{
+          form{
+            opacity: 0;
+          }to{
+            opacity: 1;
+          }  
+        }
+    </style>
+
+      <div class='login-section'>
+      <form id="registerForm" >
+
+        <label for='registerusername'>Username</label>
+        <input id='registerusername' type="text" placeholder="enter username" required/>
+
+        <label for="registeremail">email</label>
+        <input type="email" id='registeremail' placeholder='enter your email' required/>
+
+        <label for='registerpassword'>Password</label>
+        <input id='registerpassword' type="password" placeholder="enter password"  required />
+
+        <button type="submit" >Login</button>
+
+      </form>
+      <a href="./Login.html"><span >alredy registered</span></a>
+    </div>
+    <script src="./Register.js"></script>
+
+</body>
+</html>  

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <style>
+      body{
+        background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        overflow: hidden;
+        height: 500px;   
+      }
+        label{
+            color: white;
+        }
+        form{
+            width: 500px;
+            height: 400px;
+            margin: 50px 0px 0px 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: black;
+            animation: a 1s ease;
+            border-radius: 200px 20px 20px 20px;
+        }
+        a{
+          color: white;
+          margin-left: 50px;
+
+        }
+        input{
+            border-radius: 5px;
+            background-color: rgb(12, 10, 15);
+            color: white;
+            width: 200px;
+            height: 30px;
+            border: none;
+            box-shadow: 0px 0px 10px white;
+        }
+        button{
+            width: 50px;
+            background-color: rgb(8, 9, 8);
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0px 0px 10px green;
+            color: green;
+        }
+        span{
+          margin-left: 700px;
+          margin-bottom: 100px;
+        }
+        @keyframes a{
+          form{
+            opacity: 0;
+          }to{
+            opacity: 1;
+          }
+          
+        }
+    </style>
+
+      <div class='login-section' >
+      <form id="loginForm">
+
+        <label for='loginusername'>Username</label>
+        <input id='loginusername' required placeholder="enter your name" />
+
+        <label for='loginpassword'>Password</label>
+        <input id='loginpassword' required type="password" placeholder="enter your password" />
+
+        <button type="submit">Login</button>
+
+      </form>
+      <a href="./Register.html"><span style="margin-left: 700px;margin-top: 20px;">don't have account</span></a>
+
+      <script src="./Login.js"></script>   
+</body>
+</html>
